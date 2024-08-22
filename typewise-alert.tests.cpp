@@ -39,7 +39,7 @@ TEST(ClassifyTemperatureBreachTest, MedActiveCooling) {
 }
 
 TEST(CheckAndAlertTest, SendToController) {
-  BatteryCharacter batteryChar = {PASSIVE_COOLING}
+  BatteryCharacter batteryChar = {PASSIVE_COOLING};
   checkAndAlert(TO_CONTROLLER, batteryChar, -1);
   checkAndAlert(TO_CONTROLLER, batteryChar, 36);
   checkAndAlert(TO_CONTROLLER, batteryChar, 25);
