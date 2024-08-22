@@ -21,7 +21,7 @@ const TemperatureLimits SetTemperatureLimits[] = {
 
 const emailmsg SetEmailMsg[] = {
   {" Temperature is too low", "Hi, the temperature is too low "},
-  {" Temperature is too high, "Hi, the temperature is too high "},
+  {" Temperature is too high", "Hi, the temperature is too high "},
   {" Temerature is normal", " "}
 };
 
