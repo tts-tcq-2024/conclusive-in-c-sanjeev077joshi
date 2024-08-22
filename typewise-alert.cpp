@@ -38,7 +38,7 @@ BreachType inferBreach(double value, double lowerLimit, double upperLimit) {
 BreachType classifyTemperatureBreach(
     CoolingType coolingType, double temperatureInC) {
     TemperatureLimits localTemperatureLimit = SetTemperatureLimits[coolingType];
-  return inferBreach(temperatureInC, localTemperatureLimit.lowerLimit, localTemperatureLimit.upperLimit);
+  return inferBreach(temperatureInC, localTemperatureLimit.lowerlimit, localTemperatureLimit.upperlimit);
 }
 
 
@@ -64,5 +64,5 @@ void sendToController(BreachType breachType) {
 void sendToEmail(BreachType breachType) {
   const char* recepient = "a.b@c.com";
   printf("To: %s\n", recepient);
-  printf(" %s \n", SetEmailMsg[breachType].body);
+  printf(" %s \n", SetEmailMsg[breachType].emailbody);
 }
